@@ -58,6 +58,7 @@ body {
 .link-entry-container {
     display: flex;
     /* height: 200px; */
+    border: 2px solid black;
 }
 
 .img {
@@ -128,9 +129,4 @@ a.btn.btn-map-link-icon.map-link-google.map-link-single {
 h1 {
     font-size: 2rem;
     padding-top: 15px;
-}
-
-.results-content {
-    max-width: 500px;
-    margin: auto;
 }
