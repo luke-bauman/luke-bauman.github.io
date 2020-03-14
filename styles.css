@@ -129,3 +129,8 @@ h1 {
     font-size: 2rem;
     padding-top: 15px;
 }
+
+.results-content {
+    max-width: 500px;
+    margin: auto;
+}
