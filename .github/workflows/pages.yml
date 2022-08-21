@@ -18,7 +18,6 @@ permissions:
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -43,6 +42,7 @@ jobs:
           path: ./build
 
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
