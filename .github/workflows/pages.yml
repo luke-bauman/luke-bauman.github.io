@@ -55,10 +55,15 @@ jobs:
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v1
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3.0.0
+        with:
+          name: production-files
+          path: ./_site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          name: production-files
+          retention-days: 3650
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
