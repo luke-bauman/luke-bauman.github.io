@@ -16,6 +16,5 @@ function createPredictableInputNumber(): number {
 export function predictableRandomNumber() {
   const inputNumber = createPredictableInputNumber();
   const prngResult = mulberry32(inputNumber);
-  console.log(prngResult);
   return prngResult;
 }
