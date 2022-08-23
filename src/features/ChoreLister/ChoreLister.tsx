@@ -102,7 +102,7 @@ export function ChoreLister() {
       <div className="mb-3">
         <Messages ref={messages} />
       </div>
-      <ul>{dailyAssignedChores.map((choreCategory) => choreGroup(choreCategory))}</ul>;
+      <ul>{dailyAssignedChores.map((choreCategory) => choreGroup(choreCategory))}</ul>
     </div>
   );
 }
