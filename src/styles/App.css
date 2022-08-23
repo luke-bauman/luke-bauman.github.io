@@ -1,5 +1,21 @@
-.App {
+.text-left {
+  text-align: left;
+}
+
+.text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-strike-through {
+  text-decoration: line-through;
+}
+
+.p-card .p-card-content {
+  padding: 0rem;
 }
 
 .App-logo {

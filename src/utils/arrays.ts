@@ -1,13 +1,15 @@
 import { predictableRandomNumber } from './prng';
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
-export function shuffleArray(array: any[]) {
-  for (var i = array.length - 1; i > 0; i--) {
+export function shuffledArray(array: any[]) {
+  const workingArray = [...array];
+  for (var i = workingArray.length - 1; i > 0; i--) {
     const j = Math.floor(predictableRandomNumber() * (i + 1));
-    let temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    const temp = workingArray[i];
+    workingArray[i] = workingArray[j];
+    workingArray[j] = temp;
   }
+  return workingArray;
 }
 
 export function randomHalvesOfList(list: any[]): {

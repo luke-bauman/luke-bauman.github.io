@@ -1,7 +1,9 @@
 import { mulberry32 } from './mulberry32';
 
 const today = new Date();
-const todayNumber = parseInt(`${today.getFullYear()}${today.getDate()}${today.getMonth}`);
+export const todayNumber = parseInt(
+  `${today.getFullYear()}${today.getDate()}${today.getMonth}`,
+);
 let predictableOffsetSeed = 358;
 
 // Using the offsetSeed and the current date, we create a bit of variance so
